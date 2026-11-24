@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css">
-    <title>About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WanderNote — Travel Journal</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body id="page">
-    <header id="site-header">
-      <h1>Phil Oman Aristoteles</h1>
-      <p class="role">I am working as IT Support Analyst and Student of Full Stack Web development</p>
+  <body>
+    <header id="topbar">
+      <div class="logo">WanderNote</div>
+      <nav class="links">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Destinations</a>
+        <a class="nav-link" href="#">Tips</a>
+        <a class="nav-link" href="#">About</a>
+      </nav>
     </header>
-    
-    <section id="left">
-      <img class="avatar" src="./assets/images/profile.jpg" alt="profilepic">
-      <div class="card">
-        <p>Email: <a href="#">philaristotel@something.com</a></p>
+
+    <section id="hero">
+      <div class="hero-inner">
+        <img class="hero-img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="Traveler overlooking mountains" />
+
+        <div class="headline">Stories from the road</div>
+        <div class="sub">Notes, photos, and pocket itineraries.</div>
       </div>
     </section>
 
-    <section id="right">
-      <div class="card">
-        <h2>My Skills</h2>
-        <p>My Important skills below</p>
-        <ul>
-          <li>Powershell Scripting</li>
-          <li>HTML + CSS</li>
-          <li>Vanilla JS</li>
-        </ul>
-        <small>More skills to come</small>
+    <main id="content">
+      <div class="left-col">
+        <article class="post card">
+          <div class="post-title">Kyoto in 48 Hours</div>
+          <div class="post-meta">May 2025 · Asia · Budget</div>
+          <img class="post-img" src="https://picsum.photos/id/1016/800/500" alt="Kyoto trip collage" />
+          <div class="post-body">
+            <p>Temple hopping, alley ramen, and morning markets.</p>
+          </div>
+        </article>
+        <article class="post card">
+          <div class="post-title">Lisbon Hill Walk</div>
+          <div class="post-meta">April 2025 · Europe · Walkable</div>
+          <img class="post-img" src="https://picsum.photos/id/1035/800/500" alt="Lisbon city view" />
+          <div class="post-body">
+            <p>Tiles, trams, and sunset at Miradouro.</p>
+          </div>
+        </article>
       </div>
-    </section>
+      <aside class="right-col">
+        <div class="panel">
+          <div class="panel-title">Popular Tags</div>
+          <div class="tag-list">
+            <a href="#" class="tag">streetfood</a>
+            <a href="#" class="tag">itinerary</a>
+            <a href="#" class="tag">budget</a>
+          </div>
+        </div>
+      </aside>
+    </main>
 
-<footer id="site-footer">
-  <small>&copy; 2026 Phil Aristotel. All rights reserved.</small>
-</footer>
-
-
+    <footer id="bottombar">
+      <div class="copy">© 2025 WanderNote</div>
+    </footer>
   </body>
 </html>
